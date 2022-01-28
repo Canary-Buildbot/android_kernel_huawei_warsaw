@@ -1,0 +1,13 @@
+1.如何编译
+(1)下载工具链:https://github.com/djb77/aarch64-linux-android-4.9
+(2)更改build.sh中的PATH
+(3)运行 build.sh
+
+2.生成的文件
+- Kernel : out/arch/arm64/boot/Image.gz
+- module : out/drivers/*/*.ko
+
+3.如何清理
+make ARCH=arm64 distclean
+rm -rf out
+rm kernel.log
